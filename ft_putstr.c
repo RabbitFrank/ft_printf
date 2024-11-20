@@ -1,18 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putchar.c                                       :+:      :+:    :+:   */
+/*   ft_putstr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mlitvino <mlitvino@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/11/19 16:34:35 by mlitvino          #+#    #+#             */
-/*   Updated: 2024/11/20 10:26:12 by mlitvino         ###   ########.fr       */
+/*   Created: 2024/11/20 12:38:59 by mlitvino          #+#    #+#             */
+/*   Updated: 2024/11/20 16:55:01 by mlitvino         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libftprintf.h"
 
-int	ft_putchar(int a)
+int	ft_putstr(char *str)
 {
-	return (write(1, &a, 1));
+	int	len;
+
+	len = 0;
+	if (str == NULL)
+		return (ft_putstr("(null)"));
+	while (*str)
+	{
+		len += ft_putchar(*str);
+		str++;
+	}
+	return (len);
 }
