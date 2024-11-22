@@ -13,10 +13,8 @@
 NAME = libftprintf.a
 SRC = \
 	ft_printf.c ft_putchar.c ft_puthex.c  ft_putint.c ft_putptr.c ft_putstr.c ft_putu.c
-BSRC = \
 
 OBJ = $(SRC:.c=.o)
-BOBJ = $(BSRC:.c=.o)
 DEPS = ft_printf.h
 
 CC = cc
@@ -33,11 +31,11 @@ $(NAME): $(OBJ) $(DEPS)
 	$(CC) -c $(CFLAGS) $?
 
 clean:
-	rm -f $(OBJ) $(BOBJ) .BONUS_DEPEND
+	rm -f $(OBJ)
 
 fclean: clean
 	rm -f $(NAME)
 
 re: fclean all
 
-.PHONY: all clean fclean re bonus
+.PHONY: all clean fclean re
