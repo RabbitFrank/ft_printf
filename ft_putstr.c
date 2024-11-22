@@ -6,7 +6,7 @@
 /*   By: mlitvino <mlitvino@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/20 12:38:59 by mlitvino          #+#    #+#             */
-/*   Updated: 2024/11/20 16:55:01 by mlitvino         ###   ########.fr       */
+/*   Updated: 2024/11/21 12:40:52 by mlitvino         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,9 +20,6 @@ int	ft_putstr(char *str)
 	if (str == NULL)
 		return (ft_putstr("(null)"));
 	while (*str)
-	{
-		len += ft_putchar(*str);
-		str++;
-	}
+		len += ft_putchar(*str++);
 	return (len);
 }

@@ -1,26 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libftprintf.h                                      :+:      :+:    :+:   */
+/*   ft_putint.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mlitvino <mlitvino@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/11/19 12:41:34 by mlitvino          #+#    #+#             */
-/*   Updated: 2024/11/21 12:53:21 by mlitvino         ###   ########.fr       */
+/*   Created: 2024/11/21 12:37:29 by mlitvino          #+#    #+#             */
+/*   Updated: 2024/11/21 12:40:38 by mlitvino         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIBFTPRINTF_H
-# define LIBFTPRINTF_H
-# include <unistd.h>
-# include <stdlib.h>
-# include <stdarg.h>
-# include <stdint.h>
+#include "libftprintf.h"
 
-int	ft_printf(const char *format, ...);
-int	ft_putchar(int a);
-int	ft_putstr(char *str);
-int	ft_putptr(void *ptr);
-int	ft_putu(unsigned int n);
+int	ft_putprint()
+{
+	int	len;
 
-#endif
+	len = 0;
+	return (len);
+}

@@ -1,26 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libftprintf.h                                      :+:      :+:    :+:   */
+/*   ft_putu.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mlitvino <mlitvino@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/11/19 12:41:34 by mlitvino          #+#    #+#             */
-/*   Updated: 2024/11/21 12:53:21 by mlitvino         ###   ########.fr       */
+/*   Created: 2024/11/21 12:43:43 by mlitvino          #+#    #+#             */
+/*   Updated: 2024/11/21 12:56:18 by mlitvino         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIBFTPRINTF_H
-# define LIBFTPRINTF_H
-# include <unistd.h>
-# include <stdlib.h>
-# include <stdarg.h>
-# include <stdint.h>
+#include "libftprintf.h"
 
-int	ft_printf(const char *format, ...);
-int	ft_putchar(int a);
-int	ft_putstr(char *str);
-int	ft_putptr(void *ptr);
-int	ft_putu(unsigned int n);
+int	ft_putu(unsigned int n)
+{
+	int	len;
 
-#endif
+	len = 0;
+	if (n >= 10)
+		len += ft_putu(n / 10);
+	len += ft_putchar((n % 10) + '0');
+	return (len);
+}
