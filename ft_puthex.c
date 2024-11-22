@@ -6,7 +6,7 @@
 /*   By: mlitvino <mlitvino@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/22 13:42:56 by mlitvino          #+#    #+#             */
-/*   Updated: 2024/11/22 14:36:41 by mlitvino         ###   ########.fr       */
+/*   Updated: 2024/11/22 15:37:36 by mlitvino         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,20 +14,10 @@
 
 static int	ft_hex(int hex, char spec)
 {
-	if (spec == 'x')
-	{
-		if (hex >= 10)
-			return (ft_putchar(hex - 10 + 'a'));
-		else
-			return (ft_putchar(hex + '0'));
-	}
-	if (spec == 'X')
-	{
-		if (hex >= 10)
-			return (ft_putchar(hex - 10 + 'A'));
-		else
-			return (ft_putchar(hex + '0'));
-	}
+	if (hex >= 10)
+		return (ft_putchar(hex - 10 + spec - 23));
+	else
+		return (ft_putchar(hex + '0'));
 	return (0);
 }
 

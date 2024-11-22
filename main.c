@@ -6,7 +6,7 @@
 /*   By: mlitvino <mlitvino@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/19 16:46:04 by mlitvino          #+#    #+#             */
-/*   Updated: 2024/11/22 14:33:33 by mlitvino         ###   ########.fr       */
+/*   Updated: 2024/11/22 15:41:24 by mlitvino         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ int	main(void)
 {
 	int len_sys, len_my;
 
-	/*printf("_____________________________START_CHAR_TEST____________________________\n\n");
+	printf("_____________________________START_CHAR_TEST____________________________\n\n");
 
 	int ch_loop = 0;
 	int i = -50;
@@ -135,89 +135,7 @@ int	main(void)
 
 	printf("\n-----------------------------END_PTR_TEST-----------------------------\n");
 
-	printf("_____________________________START_PERC+SPEC_TEST____________________________\n\n");
 
-	char *norm_per = "%%"; // Normal Test
-
-	printf("Normal Test\n");
-	printf("sys: ");
-	len_sys = printf("%%", norm_per);
-	printf(" | my: ");
-	fflush(stdout);
-	len_my = ft_printf("%%", norm_per);
-	printf("\nsys_len: %d | my_len: %d\n", len_sys, len_my);
-
-	printf("\n");
-	char *neg_per = "Good"; // One Percent Test
-
-	printf("One Percent Test\n");
-	printf("sys: ");
-	len_sys = printf("%", neg_per);
-	printf(" | my: ");
-	fflush(stdout);
-	len_my = ft_printf("%", neg_per);
-	printf("\nsys_len: %d | my_len: %d\n", len_sys, len_my);
-
-	printf("\n");
-	char *neg_spec = "Bad"; // Wrong Specifier Test
-
-	printf("Wrong Specifier Test\n");
-	printf("sys: ");
-	len_sys = printf("%w", neg_spec);
-	printf(" | my: ");
-	fflush(stdout);
-	len_my = ft_printf("%w", neg_spec);
-	printf("\nsys_len: %d | my_len: %d\n", len_sys, len_my);
-
-	printf("\n");
-	char *emp = "Bad"; // No Variable Test
-
-	printf("No Variable Test\n");
-	printf("sys: ");
-	len_sys = printf("%d\n");
-	printf(" | my: ");
-	fflush(stdout);
-	len_my = ft_printf("%d");
-	printf("\nsys_len: %d | my_len: %d\n", len_sys, len_my);
-
-
-	printf("\n-----------------------------END_PERC+SPEC_TEST-----------------------------\n");
-
-	printf("_____________________________START_UNSIGNED_TEST____________________________\n\n");
-
-	unsigned int pos_u = 546546554; // Normal Test
-
-	printf("Normal Test\n");
-	printf("sys: ");
-	len_sys = printf("%u", pos_u);
-	printf(" | my: ");
-	fflush(stdout);
-	len_my = ft_printf("%u", pos_u);
-	printf("\nsys_len: %d | my_len: %d\n", len_sys, len_my);
-
-	printf("\n");
-	unsigned int neg_u = -546546554; // Crash Test
-
-	printf("Crash Test\n");
-	printf("sys: ");
-	len_sys = printf("%u", neg_u);
-	printf(" | my: ");
-	fflush(stdout);
-	len_my = ft_printf("%u", neg_u);
-	printf("\nsys_len: %d | my_len: %d\n", len_sys, len_my);
-
-	printf("\n");
-	unsigned int gar_u; // Garbage Test
-
-	printf("Garbage Test\n");
-	printf("sys: ");
-	len_sys = printf("%u", gar_u);
-	printf(" | my: ");
-	fflush(stdout);
-	len_my = ft_printf("%u", gar_u);
-	printf("\nsys_len: %d | my_len: %d\n", len_sys, len_my);
-
-	printf("\n-----------------------------END_UNSIGNED_TEST-----------------------------\n");
 
 	printf("_____________________________START_INT_TEST____________________________\n\n");
 
@@ -310,6 +228,42 @@ int	main(void)
 
 	printf("\n-----------------------------END_INT_TEST-----------------------------\n");
 
+	printf("_____________________________START_UNSIGNED_TEST____________________________\n\n");
+
+	unsigned int pos_u = 546546554; // Normal Test
+
+	printf("Normal Test\n");
+	printf("sys: ");
+	len_sys = printf("%u", pos_u);
+	printf(" | my: ");
+	fflush(stdout);
+	len_my = ft_printf("%u", pos_u);
+	printf("\nsys_len: %d | my_len: %d\n", len_sys, len_my);
+
+	printf("\n");
+	unsigned int neg_u = -546546554; // Crash Test
+
+	printf("Crash Test\n");
+	printf("sys: ");
+	len_sys = printf("%u", neg_u);
+	printf(" | my: ");
+	fflush(stdout);
+	len_my = ft_printf("%u", neg_u);
+	printf("\nsys_len: %d | my_len: %d\n", len_sys, len_my);
+
+	printf("\n");
+	unsigned int gar_u; // Garbage Test
+
+	printf("Garbage Test\n");
+	printf("sys: ");
+	len_sys = printf("%u", gar_u);
+	printf(" | my: ");
+	fflush(stdout);
+	len_my = ft_printf("%u", gar_u);
+	printf("\nsys_len: %d | my_len: %d\n", len_sys, len_my);
+
+	printf("\n-----------------------------END_UNSIGNED_TEST-----------------------------\n");
+
 
 	printf("_____________________________START_HEX_TEST____________________________\n\n");
 
@@ -351,8 +305,44 @@ int	main(void)
 	printf("\n");
 
 
-	printf("\n-----------------------------END_HEX_TEST-----------------------------\n");*/
+	printf("\n-----------------------------END_HEX_TEST-----------------------------\n");
 
-	ft_printf(" %x ", 0);
+	printf("_____________________________START_PERC+SPEC_TEST____________________________\n\n");
+
+	char *norm_per = "%%"; // Normal Test
+
+	printf("Normal Test\n");
+	printf("sys: ");
+	len_sys = printf("%%", norm_per);
+	printf(" | my: ");
+	fflush(stdout);
+	len_my = ft_printf("%%", norm_per);
+	printf("\nsys_len: %d | my_len: %d\n", len_sys, len_my);
+
+	printf("\n");
+	char *neg_per = "Good"; // One Percent Test
+
+	printf("One Percent Test\n");
+	printf("sys: ");
+	len_sys = printf("%", neg_per);
+	printf(" | my: ");
+	fflush(stdout);
+	len_my = ft_printf("%", neg_per);
+	printf("\nsys_len: %d | my_len: %d\n", len_sys, len_my);
+
+	printf("\n");
+	char *neg_spec = "Bad"; // Wrong Specifier Test
+
+	printf("Wrong Specifier Test\n");
+	printf("sys: ");
+	len_sys = printf("%w", neg_spec);
+	printf(" | my: ");
+	fflush(stdout);
+	len_my = ft_printf("%w", neg_spec);
+	printf("\nsys_len: %d | my_len: %d\n", len_sys, len_my);
+
+
+	printf("\n-----------------------------END_PERC+SPEC_TEST-----------------------------\n");
+
 	return (0);
 }

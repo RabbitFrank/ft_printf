@@ -6,14 +6,13 @@
 /*   By: mlitvino <mlitvino@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/22 14:28:05 by mlitvino          #+#    #+#             */
-/*   Updated: 2024/11/22 14:29:38 by mlitvino         ###   ########.fr       */
+/*   Updated: 2024/11/22 15:46:58 by mlitvino         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef FT_PRINTF_H
 # define FT_PRINTF_H
 # include <unistd.h>
-# include <stdlib.h>
 # include <stdarg.h>
 # include <stdint.h>
 
@@ -26,3 +25,7 @@ int	ft_putint(int n, char spec);
 int	ft_puthex(int n, char spec);
 
 #endif
+
+
+
+
