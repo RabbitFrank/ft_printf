@@ -1,35 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putint.c                                        :+:      :+:    :+:   */
+/*   ft_printf.h                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mlitvino <mlitvino@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/11/21 12:37:29 by mlitvino          #+#    #+#             */
-/*   Updated: 2024/11/22 14:28:55 by mlitvino         ###   ########.fr       */
+/*   Created: 2024/11/22 14:28:05 by mlitvino          #+#    #+#             */
+/*   Updated: 2024/11/22 14:29:38 by mlitvino         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_printf.h"
+#ifndef FT_PRINTF_H
+# define FT_PRINTF_H
+# include <unistd.h>
+# include <stdlib.h>
+# include <stdarg.h>
+# include <stdint.h>
 
-int	ft_putint(int n, char spec)
-{
-	int		len;
-	long	res;
+int	ft_printf(const char *format, ...);
+int	ft_putchar(int a);
+int	ft_putstr(char *str);
+int	ft_putptr(void *ptr);
+int	ft_putu(unsigned int n);
+int	ft_putint(int n, char spec);
+int	ft_puthex(int n, char spec);
 
-	len = 0;
-	res = n;
-	if (spec == 'c')
-		return (ft_putchar(n));
-	if (spec == 'x' || spec == 'X')
-		return (ft_puthex(n, spec));
-	if (res < 0)
-	{
-		len += ft_putchar('-');
-		res = -res;
-	}
-	if (res >= 10)
-		len += ft_putint(res / 10, spec);
-	len += ft_putchar((res % 10) + '0');
-	return (len);
-}
+#endif

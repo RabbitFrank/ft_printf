@@ -6,18 +6,18 @@
 /*   By: mlitvino <mlitvino@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/19 16:46:04 by mlitvino          #+#    #+#             */
-/*   Updated: 2024/11/22 14:16:59 by mlitvino         ###   ########.fr       */
+/*   Updated: 2024/11/22 14:33:33 by mlitvino         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libftprintf.h"
+#include "ft_printf.h"
 #include <stdio.h>
 
 int	main(void)
 {
 	int len_sys, len_my;
 
-	printf("_____________________________START_CHAR_TEST____________________________\n\n");
+	/*printf("_____________________________START_CHAR_TEST____________________________\n\n");
 
 	int ch_loop = 0;
 	int i = -50;
@@ -351,7 +351,8 @@ int	main(void)
 	printf("\n");
 
 
-	printf("\n-----------------------------END_HEX_TEST-----------------------------\n");
+	printf("\n-----------------------------END_HEX_TEST-----------------------------\n");*/
 
+	ft_printf(" %x ", 0);
 	return (0);
 }

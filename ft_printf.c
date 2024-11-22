@@ -6,11 +6,11 @@
 /*   By: mlitvino <mlitvino@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/19 12:41:08 by mlitvino          #+#    #+#             */
-/*   Updated: 2024/11/22 14:02:26 by mlitvino         ###   ########.fr       */
+/*   Updated: 2024/11/22 14:28:36 by mlitvino         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libftprintf.h"
+#include "ft_printf.h"
 
 static int	ft_check_spec(const char *format, const char *spec)
 {

@@ -12,7 +12,7 @@
 
 NAME = libftprintf.a
 SRC = \
-	ft_printf.c ft_purchar.c main.c
+	ft_printf.c ft_putchar.c ft_puthex.c  ft_putint.c ft_putptr.c ft_putstr.c ft_putu.c 
 BSRC = \
 
 OBJ = $(SRC:.c=.o)

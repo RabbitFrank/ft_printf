@@ -6,11 +6,11 @@
 /*   By: mlitvino <mlitvino@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/19 16:34:35 by mlitvino          #+#    #+#             */
-/*   Updated: 2024/11/20 10:26:12 by mlitvino         ###   ########.fr       */
+/*   Updated: 2024/11/22 14:28:44 by mlitvino         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libftprintf.h"
+#include "ft_printf.h"
 
 int	ft_putchar(int a)
 {

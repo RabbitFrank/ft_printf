@@ -6,11 +6,11 @@
 /*   By: mlitvino <mlitvino@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/20 11:45:56 by mlitvino          #+#    #+#             */
-/*   Updated: 2024/11/22 13:09:56 by mlitvino         ###   ########.fr       */
+/*   Updated: 2024/11/22 14:29:00 by mlitvino         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libftprintf.h"
+#include "ft_printf.h"
 
 static char ft_convert_tohex(int n)
 {

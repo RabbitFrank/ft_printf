@@ -6,11 +6,11 @@
 /*   By: mlitvino <mlitvino@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/22 13:42:56 by mlitvino          #+#    #+#             */
-/*   Updated: 2024/11/22 14:09:50 by mlitvino         ###   ########.fr       */
+/*   Updated: 2024/11/22 14:36:41 by mlitvino         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libftprintf.h"
+#include "ft_printf.h"
 
 static int	ft_hex(int hex, char spec)
 {
@@ -28,6 +28,7 @@ static int	ft_hex(int hex, char spec)
 		else
 			return (ft_putchar(hex + '0'));
 	}
+	return (0);
 }
 
 int	ft_puthex(int n, char spec)
@@ -37,7 +38,7 @@ int	ft_puthex(int n, char spec)
 
 	len = 0;
 	i = (sizeof(n) << 3) - 4;
-	while (((n >> i) & 0xf) == 0x0)
+	while (((n >> i) & 0xf) == 0x0 && i >= 4)
 		i -= 4;
 	while (i >= 0)
 	{
