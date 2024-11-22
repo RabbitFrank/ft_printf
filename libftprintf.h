@@ -6,7 +6,7 @@
 /*   By: mlitvino <mlitvino@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/19 12:41:34 by mlitvino          #+#    #+#             */
-/*   Updated: 2024/11/21 12:53:21 by mlitvino         ###   ########.fr       */
+/*   Updated: 2024/11/22 13:57:09 by mlitvino         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,5 +22,7 @@ int	ft_putchar(int a);
 int	ft_putstr(char *str);
 int	ft_putptr(void *ptr);
 int	ft_putu(unsigned int n);
+int	ft_putint(int n, char spec);
+int	ft_puthex(int n, char spec);
 
 #endif
